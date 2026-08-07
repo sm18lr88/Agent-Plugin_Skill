@@ -31,8 +31,11 @@ Vendored schema snapshots:
 - Pinned branch/commit: `main` / `217be548739f21d6008915c29aefe320ea1a90af`
 - Reference parser reviewed: `skills-ref/src/skills_ref/parser.py`
 - Reference validator reviewed: `skills-ref/src/skills_ref/validator.py`
+- Installed package: `skills-ref==0.1.1` from PyPI
+- Wheel SHA-256: `d35db5bb8de71ae301daf5ca9cb71f8a555e8c6f83a6d40e46a5bc09f8f461b5`
+- Source distribution SHA-256: `6b400ca6e0049be62dca0167ff943ba2745fd67efb37fbba4d0ee341fccd2695`
 
-Agent Plugins defers the `SKILL.md` format to Agent Skills. This project pins the official `skills-ref` package from the reviewed commit. Local validation supplies UTF-8 text to its StrictYAML parser and metadata validator.
+Agent Plugins defers the `SKILL.md` format to Agent Skills. This project pins reviewed `skills-ref` artifacts by version and hash. The package was uploaded without Trusted Publishing, so the hashes prove artifact identity but not source-build provenance. Local validation uses its StrictYAML parser and metadata validator.
 
 ### Model Context Protocol
 

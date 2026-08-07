@@ -22,13 +22,20 @@ The explanatory references in this skill are independently written summaries wit
 
 ## Agent Skills reference validator
 
-This project depends on `skills-ref` from the official Agent Skills repository.
+This project depends on `skills-ref` 0.1.1 from PyPI.
 
-Source: `https://github.com/agentskills/agentskills`
+Package: `https://pypi.org/project/skills-ref/0.1.1/`
 
-Pinned commit: `217be548739f21d6008915c29aefe320ea1a90af`
+Published artifact hashes:
 
-The Agent Skills repository licenses `skills-ref` under Apache License 2.0. A copy is included at `licenses/Apache-2.0.txt`.
+- Wheel: `d35db5bb8de71ae301daf5ca9cb71f8a555e8c6f83a6d40e46a5bc09f8f461b5`
+- Source distribution: `6b400ca6e0049be62dca0167ff943ba2745fd67efb37fbba4d0ee341fccd2695`
+
+The seven Python modules in the wheel were reviewed. They contain parsing, validation, and CLI code. They do not contain network, subprocess, or dynamic execution code.
+
+PyPI states that this release was uploaded without Trusted Publishing. The lockfile hashes identify the reviewed artifacts, but they do not prove how the publisher built them from source.
+
+The package metadata licenses `skills-ref` under Apache License 2.0. A copy is included at `licenses/Apache-2.0.txt`.
 
 ## StrictYAML
 
