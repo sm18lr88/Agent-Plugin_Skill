@@ -33,7 +33,7 @@ Published artifact hashes:
 
 The seven Python modules in the wheel were reviewed. They contain parsing, validation, and CLI code. They do not contain network, subprocess, or dynamic execution code.
 
-PyPI states that this release was uploaded without Trusted Publishing. The lockfile hashes identify the reviewed artifacts, but they do not prove how the publisher built them from source.
+PyPI states that this release was uploaded without Trusted Publishing. The lockfile identifies both release artifacts by hash. Manual code review covered the wheel. Neither hash proves how the publisher built the artifacts from source.
 
 The package metadata licenses `skills-ref` under Apache License 2.0. A copy is included at `licenses/Apache-2.0.txt`.
 
