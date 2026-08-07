@@ -16,6 +16,7 @@ This file records user-visible project changes.
 
 - Stopped source validation from executing scripts in another selected checkout.
 - Added stable regular-file snapshots before archive creation.
+- Replaced the Git-sourced Agent Skills validator with reviewed, hash-locked PyPI artifacts.
 
 ## 1.0.0
 

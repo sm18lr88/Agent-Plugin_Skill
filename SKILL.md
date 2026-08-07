@@ -58,7 +58,7 @@ Run `uv sync --frozen` once. The project requires Python 3.11 or later.
 - Validate this skill: `uv run python scripts/validate_skill.py . --source-checkout`
 - Package this skill: `uv run python scripts/package_skill.py . --output ../agent-plugin.zip`
 
-The project pins the official Agent Skills `skills-ref` package. Initial dependency installation requires network access. Validation and packaging make no network requests.
+The project pins reviewed `skills-ref` artifacts by version and hash. Initial dependency installation requires network access. Validation and packaging make no network requests.
 
 ## Scope and output
 
