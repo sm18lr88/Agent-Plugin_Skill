@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "example-plugin",
+  "version": "1.0.0",
+  "description": "Example portable Agent Plugin",
+  "author": {
+    "name": "Example Organization",
+    "email": "plugins@example.com",
+    "url": "https://example.com"
+  },
+  "homepage": "https://example.com/plugins/example-plugin",
+  "repository": "https://github.com/example/example-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["agent-plugin", "example"],
+  "extensions": {
+    "com.example.client": {
+      "enabledByDefault": false
+    }
+  }
+}

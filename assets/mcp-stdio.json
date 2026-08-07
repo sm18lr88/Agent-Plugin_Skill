@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "local-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${PLUGIN_ROOT}/server/main.py"],
+      "env": {
+        "CACHE_DIR": "${PLUGIN_DATA}/cache"
+      },
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "product": "agent-plugin",
+  "reviewed_at": "2026-08-06",
+  "agent_plugins_specification": "1.0.0",
+  "sources": {
+    "agent-plugins-spec": {
+      "repository": "https://github.com/agentplugins/agent-plugins-spec.git",
+      "branch": "main",
+      "reviewed_commit": "bd383552095128f6effe895b9257cfd580a6d179",
+      "role": "normative Agent Plugins specification and schemas",
+      "policy": "authoritative-for-agent-plugins-v1",
+      "review_outcome": "adopted",
+      "paths": [
+        "spec/1.0.0.md",
+        "schemas/1.0.0/plugin.schema.json",
+        "schemas/1.0.0/mcp.schema.json",
+        "LICENSE.md"
+      ],
+      "license": {
+        "documentation": "CC-BY-4.0",
+        "software": "Apache-2.0",
+        "url": "https://github.com/agentplugins/agent-plugins-spec/blob/bd383552095128f6effe895b9257cfd580a6d179/LICENSE.md"
+      }
+    },
+    "agent-plugins-example": {
+      "repository": "https://github.com/agentplugins/agent-plugins-example.git",
+      "branch": "main",
+      "reviewed_commit": "5f3f5084a821aefa792e79500dd8f0462ab83473",
+      "role": "official migration example and validation checklist",
+      "policy": "selective-adaptation",
+      "review_outcome": "adapted",
+      "paths": [
+        "skills/migrate-agent-plugin/SKILL.md",
+        "skills/migrate-agent-plugin/references/migration-guide.md",
+        "skills/migrate-agent-plugin/references/client-extensions.md",
+        "skills/migrate-agent-plugin/references/validation-checklist.md"
+      ],
+      "license": {
+        "software": "MIT",
+        "url": "https://github.com/agentplugins/agent-plugins-example/blob/5f3f5084a821aefa792e79500dd8f0462ab83473/LICENSE"
+      }
+    },
+    "agent-skills": {
+      "repository": "https://github.com/agentskills/agentskills.git",
+      "branch": "main",
+      "reviewed_commit": "217be548739f21d6008915c29aefe320ea1a90af",
+      "role": "normative Agent Skills format and skill engineering guidance",
+      "policy": "authoritative-for-skill-format-selective-for-practice",
+      "review_outcome": "adapted",
+      "paths": [
+        "docs/specification.mdx",
+        "docs/skill-creation/best-practices.mdx",
+        "docs/skill-creation/evaluating-skills.mdx",
+        "docs/skill-creation/using-scripts.mdx",
+        "skills-ref/src/skills_ref/validator.py"
+      ],
+      "license": {
+        "documentation": "CC-BY-4.0",
+        "software": "Apache-2.0",
+        "url": "https://github.com/agentskills/agentskills/blob/217be548739f21d6008915c29aefe320ea1a90af/LICENSE"
+      }
+    },
+    "model-context-protocol": {
+      "repository": "https://github.com/modelcontextprotocol/modelcontextprotocol.git",
+      "branch": "main",
+      "reviewed_commit": "2de0727d3c2d6f2f32b3fefbba0bf8395b2e7324",
+      "published_specification": "2026-07-28",
+      "role": "MCP wire and lifecycle source of truth",
+      "policy": "reference-no-vendoring",
+      "review_outcome": "referenced",
+      "paths": [
+        "schema/2026-07-28/schema.ts",
+        "docs/specification/2026-07-28"
+      ],
+      "license": {
+        "software": "MIT",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/2de0727d3c2d6f2f32b3fefbba0bf8395b2e7324/LICENSE"
+      }
+    }
+  },
+  "volatile_sources": [
+    {
+      "url": "https://agent-plugins.org/compatible-clients",
+      "reviewed_at": "2026-08-06",
+      "role": "current client and transport support snapshot",
+      "policy": "recheck-before-release"
+    }
+  ]
+}
