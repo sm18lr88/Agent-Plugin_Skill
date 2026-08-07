@@ -35,10 +35,12 @@ jobs:
           enable-cache: true
 
       - name: Install locked dependencies
-        run: uv sync --frozen
+        run: |
+          uv lock --check
+          uv sync --frozen
 
       - name: Run the official Agent Skills validator
-        run: uv run skills-ref validate "${{ github.workspace }}/agent-plugin"
+        run: uv run agentskills validate "${{ github.workspace }}/agent-plugin"
 
       - name: Validate the source checkout
         run: uv run python scripts/validate_skill.py "${{ github.workspace }}/agent-plugin" --source-checkout

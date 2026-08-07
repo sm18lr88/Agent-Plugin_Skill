@@ -12,8 +12,9 @@
 Run from a clean Git checkout:
 
 ```bash
+uv lock --check
 uv sync --frozen
-uv run skills-ref validate "$(pwd)"
+uv run agentskills validate "$(pwd)"
 uv run python scripts/validate_skill.py . --source-checkout
 uv run python scripts/package_skill.py . --output ../agent-plugin.zip
 uv run python scripts/validate_skill.py ../agent-plugin --package
