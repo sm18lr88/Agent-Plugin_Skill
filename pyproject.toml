@@ -4,7 +4,7 @@ version = "1.0.0"
 description = "Author, review, migrate, validate, and package portable Agent Plugins."
 requires-python = ">=3.11"
 license = "Apache-2.0"
-dependencies = ["skills-ref"]
+dependencies = ["skills-ref==0.1.1"]
 
 [tool.mypy]
 follow_untyped_imports = true
@@ -14,6 +14,3 @@ python_version = "3.11"
 [tool.ty.environment]
 extra-paths = ["./scripts"]
 python-version = "3.11"
-
-[tool.uv.sources]
-skills-ref = { git = "https://github.com/agentskills/agentskills", subdirectory = "skills-ref", rev = "217be548739f21d6008915c29aefe320ea1a90af" }
